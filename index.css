@@ -1,31 +1,64 @@
 /* Design System */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
 /* content-margin */
 .container-margin {
-  margin: 0 120px;
+  padding: 16px 64px;
 }
+
 
 
 
 /* Design System */
 
 nav {
-  padding: 10px;
+  /* padding: 10px; */
   display: flex;
   justify-content: space-between;
+  background-color: antiquewhite;
 }
 
 ul {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0;
-  margin: 0;
+}
+
+#Pages {
+  border: transparent;
+  text-transform: uppercase;
+  font-weight: 800;
+  font-family: monospace;
+  background-color: transparent;
+}
+
+#Pages:hover {
+  color: #cf0606;
+
 }
 
 li,
 a {
+  text-transform: uppercase;
   text-decoration: none;
   list-style: none;
   margin: 0 10px;
+  font-size: 0.9rem;
+  color: black;
+  font-weight: 500;
+  font-family: monospace;
+}
+
+a:hover {
+  color: #cf0606;
+
+}
+
+img:hover {
+  color: #cf0606;
+
 }
