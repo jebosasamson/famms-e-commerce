@@ -58,7 +58,20 @@ a:hover {
 
 }
 
-img:hover {
-  color: #cf0606;
+.menu {
+  font-size: 34px;
+  display: none;
+}
 
+.fa-magnifying-glass,
+.fa-cart-shopping {
+  color: #040000;
+  font-size: 1rem;
+  margin-left: 10px;
+}
+
+.fa-magnifying-glass:hover,
+.fa-cart-shopping:hover {
+  color: #cf0606;
+  cursor: pointer;
 }

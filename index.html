@@ -5,6 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Famms E-commerce</title>
     <link rel="stylesheet" href="index.css" />
+    <link
+      rel="shortcut icon"
+      href="assets/Images/logo.png"
+      type="image/x-icon"
+    />
   </head>
   <body>
     <header>
@@ -12,12 +17,15 @@
         <section>
           <img src="assets/images/logo.png" alt="logo" width="150" height="" />
         </section>
+
+        <section class="menu"><i class="fa-solid fa-bars"></i></section>
+
         <ul>
           <li><a href="#home">Home</a></li>
           <li>
             <select name="Pages" id="Pages">
               <option value="Home"><a href="#">Pages</a></option>
-              <option value="About"><a href="#">About</a></option>
+              <option value="About"><a href="about.html">About</a></option>
               <option value="About"><a href="#">Testimonial</a></option>
             </select>
           </li>
@@ -25,21 +33,10 @@
           <li><a href="blog.html">Blog</a></li>
           <li><a href="CONTACT.HTML">Contact</a></li>
           <section>
-            <img
-              style="margin-right: 10px"
-              src="assets/icons/grocery-store.png"
-              alt="cart-icon"
-              width="15"
-              height="15"
-            />
+            <i class="fa-solid fa-cart-shopping"></i>
           </section>
           <section>
-            <img
-              src="assets/icons/search.png"
-              alt="search-icon"
-              width="15"
-              height="15"
-            />
+            <i class="fa-solid fa-magnifying-glass"></i>
           </section>
         </ul>
       </nav>
@@ -50,4 +47,8 @@
     </footer>
   </body>
   <script src="index.js"></script>
+  <script
+    src="https://kit.fontawesome.com/b8d31d0ee1.js"
+    crossorigin="anonymous"
+  ></script>
 </html>
