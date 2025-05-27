@@ -87,6 +87,13 @@ a:hover {
   cursor: pointer;
 }
 
+/* .svg-icon {
+  width: 24px;
+  height: 24px;
+  fill: #0d36a6;
+} */
+
+/* Media Queries */
 @media (max-width: 990px) {
   .large-menu-list {
     display: none;
