@@ -29,10 +29,19 @@ nav {
 }
 
 .small-menu-list {
-  background-color: rgb(216, 15, 15);
+  background-color: beige;
   padding: 24px;
   text-align: center;
   display: none;
+}
+
+.small-menu-list li,
+.fa-cart-shopping {
+  margin-bottom: 10px;
+}
+
+.small-menu-list:hover {
+  color: #cf0606;
 }
 
 .small-menu-list.show {
@@ -87,11 +96,70 @@ a:hover {
   cursor: pointer;
 }
 
-/* .svg-icon {
-  width: 24px;
-  height: 24px;
-  fill: #0d36a6;
-} */
+.svg-icon {
+  width: 4.5rem;
+  fill: #fff;
+  margin: 16px 0;
+}
+
+h3 {
+  font-size: 2rem;
+  font-weight: 800;
+  margin-bottom: 10px;
+}
+
+/* About us CsS */
+
+.about-us-section {
+  background-color: rgb(9, 29, 95);
+  color: white;
+  padding: 40px;
+  width: 350px;
+  height: 281px;
+  border-radius: 10px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.about-us-section p {
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin-bottom: 30px;
+}
+
+.About-us {
+  background-color: #f0f0f0;
+  padding: 30px;
+}
+
+.About-us header {
+  font-size: 3rem;
+  font-weight: 600;
+  margin-bottom: 40px;
+  text-align: center;
+  padding: 24px;
+}
+
+.About-us header::after {
+  content: "";
+  display: block;
+  width: 70px;
+  height: 5px;
+  background: #cf0606;
+  margin: 10px auto 10px;
+
+}
+
+.about-us-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
 
 /* Media Queries */
 @media (max-width: 990px) {
