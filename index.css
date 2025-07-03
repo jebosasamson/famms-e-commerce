@@ -10,9 +10,6 @@
   padding: 16px 64px;
 }
 
-
-
-
 /* Design System */
 
 nav {
@@ -58,7 +55,6 @@ nav {
 
 #Pages:hover {
   color: #cf0606;
-
 }
 
 li,
@@ -68,14 +64,13 @@ a {
   list-style: none;
   margin: 0 10px;
   font-size: 0.9rem;
-  color: black;
-  font-weight: 500;
+  color: #002c3e;
+  font-weight: 900;
   font-family: monospace;
 }
 
 a:hover {
   color: #cf0606;
-
 }
 
 .menu {
@@ -85,7 +80,7 @@ a:hover {
 
 .fa-magnifying-glass,
 .fa-cart-shopping {
-  color: #040000;
+  color: #002c3e;
   font-size: 1rem;
   margin-left: 10px;
 }
@@ -108,10 +103,56 @@ h3 {
   margin-bottom: 10px;
 }
 
+/* HERO CSS */
+
+.hero-section,
+.New-arrival {
+  background-color: #b9b9b9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px 0px 0 0px;
+}
+.hero-txt {
+  width: 40%;
+  font-size: 1.5rem;
+  line-height: 1;
+}
+span {
+  color: #cf0606;
+  font-weight: 800;
+  font-size: 72px;
+}
+.hero-txt h2 {
+  font-size: 72px;
+  font-weight: 800;
+  color: #002c3e;
+  margin-bottom: 2rem;
+}
+button {
+  background-color: #cf0606;
+  color: white;
+  padding: 15px;
+  border: none;
+  font-size: 1.2rem;
+  cursor: pointer;
+  width: 200px;
+  margin-top: 2rem;
+}
+button:hover,
+.subscribe-input button:hover {
+  background-color: transparent;
+  border: 2px solid #cf0606;
+  color: #cf0606;
+  transition: all 0.3s ease-in-out;
+}
+
+/* HERO CSS */
+
 /* About us CsS */
 
 .about-us-section {
-  background-color: rgb(9, 29, 95);
+  background-color: #002c3e;
   color: white;
   padding: 40px;
   width: 350px;
@@ -150,7 +191,6 @@ h3 {
   height: 5px;
   background: #cf0606;
   margin: 10px auto 10px;
-
 }
 
 .about-us-container {
@@ -160,7 +200,56 @@ h3 {
   gap: 30px;
   flex-wrap: wrap;
 }
+/* NEW ARRIVAL CSS */
+.new-txt {
+  font-size: 1.5rem;
 
+  width: 40%;
+}
+.new-txt h6 {
+  font-size: 64px;
+  color: #002c3e;
+}
+/* NEW ARRIVAL CSS */
+
+.subscribe {
+  background-color: #b9b9b9;
+  padding: 60px;
+  text-align: center;
+  margin-top: 10px;
+  font-size: 1.3rem;
+}
+.subscribe h6 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  color: #002c3e;
+}
+.subscribe-input {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.subscribe-input button {
+  background-color: #cf0606;
+  color: white;
+  padding: 15px;
+  border: none;
+  font-size: 1.2rem;
+  cursor: pointer;
+  width: 500px;
+  border-radius: 2rem;
+  margin-top: 2rem;
+}
+input {
+  padding: 20px;
+  width: 800px;
+  border: none;
+  border-radius: 30px;
+  font-size: 1rem;
+  margin-bottom: 15px;
+  margin-top: 32px;
+}
 /* Media Queries */
 @media (max-width: 990px) {
   .large-menu-list {
@@ -171,7 +260,6 @@ h3 {
     display: block;
     font-size: 34px;
   }
-
 }
 
 @media (min-width: 990px) {
