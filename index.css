@@ -10,6 +10,11 @@
   padding: 16px 64px;
 }
 
+.spacebetween {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 /* Design System */
 
 nav {
@@ -184,7 +189,8 @@ button:hover,
   padding: 24px;
 }
 
-.About-us header::after {
+.About-us header::after,
+.Product header::after {
   content: "";
   display: block;
   width: 70px;
@@ -212,11 +218,49 @@ button:hover,
 }
 /* NEW ARRIVAL CSS */
 
+/* Product CSS */
+
+.Product {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+}
+.Product span {
+  color: #cf0606;
+  font-size: 2.5rem;
+}
+.Product header {
+  font-size: 2.5rem;
+  font-weight: 600;
+  margin-bottom: 20px;
+  padding: 24px;
+}
+.product-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  width: 80%;
+}
+article {
+  background-color: #d4d3d3;
+  padding: 20px;
+  box-shadow: #2c2c2c 0px 0px 10px;
+  font-size: 1.2rem;
+  font-weight: 400;
+  font-family: Helvetica, sans-serif;
+}
+
+/* Subscribe CSS */
+
 .subscribe {
   background-color: #b9b9b9;
   padding: 60px;
   text-align: center;
-  margin-top: 10px;
   font-size: 1.3rem;
 }
 .subscribe h6 {
@@ -250,6 +294,8 @@ input {
   margin-bottom: 15px;
   margin-top: 32px;
 }
+/* Subscribe CSS */
+
 /* Media Queries */
 @media (max-width: 990px) {
   .large-menu-list {
