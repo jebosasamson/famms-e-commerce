@@ -64,14 +64,26 @@ nav {
 
 li,
 a {
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
   text-decoration: none;
   list-style: none;
-  margin: 0 10px;
+  /* margin: 0 10px; */
   font-size: 0.9rem;
   color: #002c3e;
   font-weight: 900;
   font-family: monospace;
+}
+
+.large-menu-list li,
+.large-menu-list a {
+  /* text-transform: uppercase;
+  text-decoration: none;
+  list-style: none; */
+  margin: 0 10px;
+  /* font-size: 0.9rem;
+  color: #002c3e;
+  font-weight: 900;
+  font-family: monospace; */
 }
 
 a:hover {
@@ -123,7 +135,7 @@ h3 {
   font-size: 1.5rem;
   line-height: 1;
 }
-span {
+.hero-txt span {
   color: #cf0606;
   font-weight: 800;
   font-size: 72px;
@@ -142,7 +154,7 @@ button {
   font-size: 1.2rem;
   cursor: pointer;
   width: 200px;
-  margin-top: 2rem;
+  /* margin-top: 2rem; */
 }
 button:hover,
 .subscribe-input button:hover {
@@ -285,7 +297,7 @@ article {
   border-radius: 2rem;
   margin-top: 2rem;
 }
-input {
+.subscribe input {
   padding: 20px;
   width: 800px;
   border: none;
@@ -295,6 +307,30 @@ input {
   margin-top: 32px;
 }
 /* Subscribe CSS */
+
+/* ADDRESS CSS */
+.address {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px;
+  margin: 0 100px;
+}
+.address span {
+  font-weight: 800;
+}
+.news-sub {
+  display: flex;
+}
+
+.address input,
+.address button {
+  width: 150px;
+  height: auto;
+}
+
+h3 {
+  font-size: 1.25rem;
+}
 
 /* Media Queries */
 @media (max-width: 990px) {
