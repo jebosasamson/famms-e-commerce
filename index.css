@@ -140,6 +140,9 @@ h3 {
   font-weight: 800;
   font-size: 72px;
 }
+.hero-txt p {
+  margin-bottom: 45px;
+}
 .hero-txt h2 {
   font-size: 72px;
   font-weight: 800;
@@ -224,6 +227,9 @@ button:hover,
 
   width: 40%;
 }
+.new-txt p {
+  margin-bottom: 45px;
+}
 .new-txt h6 {
   font-size: 64px;
   color: #002c3e;
@@ -257,6 +263,7 @@ button:hover,
   gap: 30px;
   flex-wrap: wrap;
   width: 80%;
+  margin-bottom: 45px;
 }
 article {
   background-color: #d4d3d3;
@@ -315,8 +322,17 @@ article {
   padding: 30px;
   margin: 0 100px;
 }
+.address h3,
+.address img {
+  margin-bottom: 30px;
+}
+.address li,
+.address p {
+  margin-bottom: 10px;
+}
 .address span {
   font-weight: 800;
+  font-size: 1.2rem;
 }
 .news-sub {
   display: flex;
@@ -326,6 +342,7 @@ article {
 .address button {
   width: 150px;
   height: auto;
+  margin-top: 25px;
 }
 
 h3 {
