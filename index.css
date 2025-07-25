@@ -194,6 +194,7 @@ button:hover,
 .About-us {
   background-color: #f0f0f0;
   padding: 30px;
+  margin-top: 64px;
 }
 
 .About-us header {
@@ -267,13 +268,51 @@ button:hover,
 }
 article {
   background-color: #d4d3d3;
-  padding: 20px;
   box-shadow: #2c2c2c 0px 0px 10px;
   font-size: 1.2rem;
   font-weight: 400;
   font-family: Helvetica, sans-serif;
 }
+article img {
+  width: 200px;
+  margin: 0 30px;
+}
+.card {
+  position: relative;
+  transition: 0.5s;
+  z-index: 1;
+}
+.onhoverbtn {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  display: none;
+  z-index: 10;
+}
+.blackbackground {
+  background-color: rgba(80, 80, 80, 0.2);
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
+  height: 100%;
+  z-index: 8;
+  display: none;
+}
 
+.onhoverbtn button {
+  margin-bottom: 10px;
+}
+
+.card-img-hover {
+  scale: 1.3;
+  transition: ease-in-out 0.5s;
+}
+.spacebetween {
+  padding: 20px;
+}
 /* Subscribe CSS */
 
 .subscribe {
@@ -352,16 +391,128 @@ h3 {
 /* ADDRESS CSS */
 
 /* HERO-CAROUSEL CSS */
-.Carousel,
+.Carousel {
+  width: 100%;
+  height: 600px;
+  position: relative;
+}
 .Carousel-container {
   width: 100%;
   height: 100%;
   position: relative;
 }
+
 .hero-section {
   position: absolute;
+  opacity: 0;
+  transition: 0.5s opacity ease-out;
 }
 
+.hero-section.active {
+  opacity: 1;
+}
+
+.btn {
+  position: absolute;
+  z-index: 5;
+  background-color: transparent;
+  width: 150px;
+  height: 150px;
+  fill: #3d3d3d;
+}
+.btn:hover {
+  border: none;
+  fill: #cf0606;
+}
+
+.btn-left {
+  top: 50%;
+  transform: translateY(-50%);
+  left: -5px;
+}
+
+.btn-right {
+  right: 5px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+/* OTHER PAGE CSS */
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  padding: 60px;
+  background-color: #002c3e;
+  color: white;
+  font-size: 1.2rem;
+}
+hr {
+  margin: 5px;
+}
+.footer-section {
+  display: flex;
+}
+.footer-section-content,
+.footer-section-content2 {
+  margin-right: 100px;
+  margin-bottom: 40px;
+}
+.footer-section-content h4,
+.footer-section-content2 h4 {
+  font-size: 2rem;
+}
+.footer-section-content p {
+  margin: 20px 0 0 0;
+}
+.footer-section-content2 p {
+  margin: 20px 0 0 0;
+  width: 40%;
+}
+.pages-header {
+  background-color: #cf0606;
+  font-size: 2.5rem;
+  color: white;
+  text-align: center;
+  padding: 64px;
+  font-weight: 800;
+}
+.svg-footer {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  fill: #fff;
+}
+.svg-footer svg:hover {
+  fill: #cf0606;
+  cursor: pointer;
+}
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 30px 20px;
+  background-color: #f0f0f0;
+}
+.contact-info input,
+.contact-info textarea {
+  width: 100%;
+  max-width: 650px;
+  padding: 12px;
+  margin: 8px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+.contact-info button {
+  background-color: #1b1b1b;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
 /* Media Queries */
 @media (max-width: 990px) {
   .large-menu-list {

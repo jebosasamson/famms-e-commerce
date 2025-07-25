@@ -21,6 +21,49 @@ function handleMenuToggle() {
 
 handleMenuToggle();
 
+// HERO CAROUSEL JS
 
+let CarouselCounter = 0;
+let HeroCarousels = document.querySelectorAll(".hero-section");
+let HeroCarouselLeftBtn = document.querySelector(".btn-left");
+let HeroCarouselRightBtn = document.querySelector(".btn-right");
 
+function handleCarousel(index) {
+  HeroCarousels.forEach((item, i) => {
+    item.classList.remove("active");
+    if (i === index) {
+      item.classList.add("active");
+    }
+  });
+}
 
+handleCarousel(CarouselCounter);
+
+function handleNext() {
+  CarouselCounter = (CarouselCounter + 1) % HeroCarousels.length;
+  handleCarousel(CarouselCounter);
+}
+function handlePrev() {
+  CarouselCounter =
+    (CarouselCounter - 1 + HeroCarousels.length) % HeroCarousels.length;
+  handleCarousel(CarouselCounter);
+}
+HeroCarouselRightBtn.addEventListener("click", handleNext);
+HeroCarouselLeftBtn.addEventListener("click", handlePrev);
+
+// Product page JS
+let productCard = document.querySelector(".card");
+let productBtn = document.querySelector(".onhoverbtn");
+let productBlack = document.querySelector(".blackbackground");
+
+productCard.addEventListener("mouseenter", function handleMousein() {
+  productBtn.style.display = "block";
+  productBlack.style.display = "block";
+  productCard.classList.add("card-img-hover");
+  // alert("Mouse in");
+});
+productCard.addEventListener("mouseleave", function handleMouseout() {
+  productBtn.style.display = "none";
+  productBlack.style.display = "none";
+});
+// setInterval(handleNext, 5000);
